@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex justify-evenly content-center">
+    <!--Outside Left Nav-->
+    <div class="leftNav self-center flex flex-col justify-around">
+        <img id="play" src="./Images/play.png" alt="">
+        <img src="./Images/grid.png" alt="">
+        <img src="./Images/tv2.png" alt="">
+        <img src="./Images/antenna.png" alt="">
+        <img src="./Images/home.png" alt="">
+        <img src="./Images/search.png" alt="">
+    </div>
+
+    <!--Main Box-->
+    <div class="mainBox self-center flex">
+        <!--Inside Left Area-->
+        <div class="leftBar flex flex-col">
+            <img class="self-start" src="./Images/netflix.png" alt="">
+
+            <div class="miniNav flex flex-col justify-between">
+                <div class="flex"><img src="./Images/play3.png" alt="">Browse</div>
+                <div class="flex"><img src="./Images/heart.png" alt="">Wishlist</div>
+                <div class="flex"><img src="./Images/calendar.png" alt="">Coming Soon</div>
+            </div>
+
+            <div class="new flex flex-col">
+                <h1>New Trailers🔥</h1>
+                <div id="shadow" class="flex leftShow">
+                    <div class="flex self-end justify-between">
+                        <h3>Shadow and Bone</h3>
+                        <img src="./Images/play2.png" alt="">
+                    </div>
+                </div>
+                <div id="night" class="flex leftShow">
+                    <div class="flex self-end justify-between">
+                        <h3>The Night Agent</h3>
+                        <img src="./Images/play2.png" alt="">
+                    </div>
+                </div>
+                <div id="witcher" class="flex leftShow">
+                    <div class="flex self-end justify-between">
+                        <h3>The Witcher</h3>
+                        <img src="./Images/play2.png" alt="">
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <!--Inside Right Area-->
+        <div class="right">
+            <!--Top Bar-->
+            <div class="flex">
+                <!--Arrows-->
+                <div class="arrows flex">
+                    <img src="./Images/back.png" alt="">
+                    <img src="./Images/next.png" alt="">
+                </div>
+
+                <!--Search Bar-->
+                <div class="search flex">
+                    <img src="./Images/mic.png" alt="">
+                    <h2 class="text-gray">Search...</h2>
+                </div>
+
+                <!--Right Section-->
+                <div class="rightSection flex">
+                    <img src="./Images/bell.png" alt="">
+                    <!--Profile-->
+                    <div class="profile">
+                        <img src="./Images/pfp.png" alt="">
+                        <div class="flex-col">
+                            <h3>Samantha G.</h3>
+                            <h4>@Samantha</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Right Main Section-->
+            <div class="flex-col">
+                <!--Main Promo-->
+                <div class="mainPromo flex-col">
+                    <div class="text text-center">Peaky <br> Blinders</div>
+                    <h3>2013 - Drama - 5 Seasons</h3>
+                    <div class="buttons flex">
+                        <h5>Watch</h5>
+                        <img src="./Images/plus.png" alt="">
+                    </div>
+                </div>
+
+                <h1 class="sections">Popcorn Mania</h1>
+
+                <!--Shows, Row 1-->
+                <div class="flex justify-evenly">
+                    <div id="brooklyn" class="row1Show flex">
+                        <div class="row1Text self-end">
+                            <h1>Brooklyn Nine-Nine</h1>
+                            <div class="smaller flex">
+                                <h3>2020</h3>
+                                <h3>U/A 16*</h3>
+                                <h3>7 Seasons</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ready" class="row1Show flex">
+                        <div class="row1Text self-end">
+                            <h1>Ready Player One</h1>
+                            <div class="smaller flex">
+                                <h3>2018</h3>
+                                <h3>U/A 13*</h3>
+                                <h3>2h 20m</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="money" class="row1Show flex">
+                        <div class="row1Text self-end">
+                            <h1>Money Heist</h1>
+                            <div class="smaller flex">
+                                <h3>2021</h3>
+                                <h3>A</h3>
+                                <h3>2h 20m</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ash" class="row1Show flex">
+                        <div class="row1Text self-end">
+                            <h1>Ash vs. Evil Dead</h1>
+                            <div class="smaller flex">
+                                <h3>2018</h3>
+                                <h3>A</h3>
+                                <h3>3 Seasons</h3>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <h1 class="sections">Continue Watching</h1>
+
+                <!--Shows, Row 2-->
+                <div class="flex justify-evenly">
+                    <div id="red" class="row2Show flex">
+                        <div class="self-end w-full">
+                            <h1>Red Notice</h1>
+                            <div class="bar">
+                                <div id="fourth" class="barProgress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="extraction" class="row2Show flex">
+                        <div class="self-end w-full">
+                            <h1>Extraction</h1>
+                            <div class="bar">
+                                <div id="half" class="barProgress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="adam" class="row2Show flex">
+                        <div class="self-end w-full">
+                            <h1>The Adam Project</h1>
+                            <div class="bar">
+                                <div id="ten" class="barProgress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="guard" class="row2Show flex">
+                        <div class="self-end w-full">
+                            <h1>The Old Guard</h1>
+                            <div class="bar">
+                                <div id="nine" class="barProgress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

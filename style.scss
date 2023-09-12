@@ -1,0 +1,353 @@
+$white: #FFFFFF;
+$red: #E50815;
+$lightGray: #B2B5B3;
+$backgroundGray: #6A706C;
+
+$blurry: blur(10px);
+
+$basicPadding: 20px;
+
+$round: 40px;
+$lessRound: 20px;
+$circle: 50%;
+
+%border{
+    border-radius: $round;
+    border: 1px solid;
+    border-top-color: hsl(0, 0%, 90%);
+    border-bottom-color: hsl(0, 0%, 65%);
+    border-right-color: hsl(0, 0%, 80%);
+    border-left-color: hsl(0, 0%, 80%);
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+body{
+    background-image: url(./Images/waterfall.jpg);
+    background-size: cover;
+
+    margin: 0 auto;
+
+    color: $white;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.leftNav{
+    backdrop-filter: $blurry;
+
+    width: auto;
+    height: 30vh;
+
+    padding: $basicPadding;
+
+    @extend %border;
+
+    img{
+        @include size(25px, 25px);
+    }
+}
+
+.mainBox{
+    backdrop-filter: $blurry;
+
+    margin-top: 5vh;
+
+    width: 90vw;
+    height: 90vh;
+
+    @extend %border;
+}
+
+/*Left Main Section*/
+.leftBar{
+    border-right: 1px solid hsl(0, 0%, 65%);
+
+    width: 20%;
+    height: 100%;
+
+    img{
+        @include size(auto, 20%);
+    }
+
+    .miniNav{
+        font-size: 75%;
+
+        div{
+            margin-bottom: 2vh;
+        }
+
+        img{
+            @include size(20px, 20px);
+            margin-right: 5%;
+            margin-left: 10%;
+        }
+    }
+}
+
+.new{
+    height: 80%;
+
+    justify-content: space-evenly;
+
+    padding-left: 10%;
+
+    h1{
+        font-size: 150%;
+    }
+
+    img{
+        @include size(15px, 15px)
+    }
+}
+
+.leftShow{
+    background-size: cover;
+
+    border-radius: $lessRound;
+
+    width: 90%;
+    height: 15vh;
+
+    div{
+        backdrop-filter: $blurry;
+
+        width: 100%;
+        height: 4vh;
+
+        padding-top: 5px;
+        padding-left: 10px;
+
+        border-bottom-left-radius: $lessRound;
+        border-bottom-right-radius: $lessRound;
+
+        img{
+            background-color: $lightGray;
+            border-radius: $circle;
+            padding: 5px;
+            margin-right: 5px;
+            @include size(25px, 25px);
+        }
+    }
+}
+
+/*Right Main Section*/
+.right{
+    width: 80%;
+}
+
+    /*Top Bar*/
+    .arrows{
+        @include size(30px, 30px);
+    }
+
+    .search{
+        border-radius: $round;
+        background-color: $backgroundGray;
+
+        width: 25vw;
+        height: fit-content;
+
+        padding-left: $basicPadding;
+        padding-right: $basicPadding;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        font-size: 75%;
+
+        img{
+            @include size(20px, 20px);
+        }
+    }
+
+    .rightSection{
+        img{
+            @include size(30px,30px);
+        }
+
+        .profile{
+            background-color: $backgroundGray;
+
+            border-radius: $round;
+
+            img{
+                border-radius: $circle;
+            }
+        }
+    }
+
+    /*Promo Show*/
+    .mainPromo{
+        background-image: url(./Images/peaky.jpeg);
+        background-size: cover;
+
+        width: 95%;
+        height: 30vh;
+
+        border-radius: $round;
+
+        font-family: 'Libre Baskerville', serif;
+        font-family: 'Mukta', sans-serif;
+
+        .text{
+            font-size: 200%;
+
+            background-image: url(./Images/rustic.jpeg);
+            background-size: cover;
+
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .buttons{
+            h5{
+                background-color: $red;
+                border-radius: 15px;
+                
+                text-align: center;
+                margin: auto;
+
+                padding-right: 30px;
+                padding-left: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                font-size: 75%;
+
+                box-shadow: #aa0611 0 0 10px;
+            }
+
+            @include size(30px, 30px);
+        }
+    
+    }
+
+    .sections{
+        font-size: 125%;
+        margin-left: 2%;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+    }
+
+    /*Shows, Row 1*/
+    .row1Show{
+        background-size: cover;
+
+        border-radius: $lessRound;
+
+        width: 23%;
+        height: 18vh;
+
+        .row1Text{
+            background-color: black;
+            background: linear-gradient(transparent 0%, black 40%, black 100%);
+            
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+
+            width: 100%;
+
+            border-bottom-left-radius: $lessRound;
+            border-bottom-right-radius: $lessRound;
+        }
+
+        .smaller{
+            font-size: 50%;
+            opacity: 75%;
+
+            h3{
+                margin-right: 3%;
+            }
+        }
+    }
+
+    .row2Show{
+        background-size: cover;
+
+        border-radius: $lessRound;
+
+        width: 23%;
+        height: 10vh;
+
+        .bar{
+            height: 2px;
+            width: 90%;
+            background-color: $white;
+
+            .barProgress{
+                height: 2px;
+                background-color: $red;
+            }
+
+            #fourth{
+                width: 25%;
+            }
+
+            #half{
+                width: 65%;
+            }
+
+            #ten{
+                width: 10%;
+            }
+
+            #nine{
+                width: 90%;
+            }
+        }
+    }
+
+/*Show BG Images & Extras*/
+#shadow{
+    background-image: url(./Images/shadow.png);
+}
+
+#night{
+    background-image: url(./Images/night.webp);
+}
+
+#witcher{
+    background-image: url(./Images/witcher.jpeg);
+}
+
+#brooklyn{
+    background-image: url(./Images/brooklyn.webp);
+}
+
+#ready{
+    background-image: url(./Images/ready.png);
+}
+
+#money{
+    background-image: url(./Images/money.png);
+}
+
+#ash{
+    background-image: url(./Images/ash.jpeg);
+}
+
+#red{
+    background-image: url(./Images/red.jpg);
+}
+
+#extraction{
+    background-image: url(./Images/extraction.avif);
+}
+
+#adam{
+    background-image: url(./Images/adam.jpeg);
+}
+
+#guard{
+    background-image: url(./Images/guard.jpeg);
+}
+
+#play{
+    background-color: $red;
+    border-radius: $circle;
+    border: 3px solid $red;
+}

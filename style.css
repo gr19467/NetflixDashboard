@@ -1,0 +1,283 @@
+.mainBox, .leftNav {
+  border-radius: 40px;
+  border: 1px solid;
+  border-top-color: hsl(0, 0%, 90%);
+  border-bottom-color: hsl(0, 0%, 65%);
+  border-right-color: hsl(0, 0%, 80%);
+  border-left-color: hsl(0, 0%, 80%);
+}
+
+body {
+  background-image: url(./Images/waterfall.jpg);
+  background-size: cover;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.leftNav {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: auto;
+  height: 30vh;
+  padding: 20px;
+}
+.leftNav img {
+  width: 25px;
+  height: 25px;
+}
+
+.mainBox {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  margin-top: 5vh;
+  width: 90vw;
+  height: 90vh;
+}
+
+/*Left Main Section*/
+.leftBar {
+  border-right: 1px solid hsl(0, 0%, 65%);
+  width: 20%;
+  height: 100%;
+}
+.leftBar img {
+  width: auto;
+  height: 20%;
+}
+.leftBar .miniNav {
+  font-size: 75%;
+}
+.leftBar .miniNav div {
+  margin-bottom: 2vh;
+}
+.leftBar .miniNav img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5%;
+  margin-left: 10%;
+}
+
+.new {
+  height: 80%;
+  justify-content: space-evenly;
+  padding-left: 10%;
+}
+.new h1 {
+  font-size: 150%;
+}
+.new img {
+  width: 15px;
+  height: 15px;
+}
+
+.leftShow {
+  background-size: cover;
+  border-radius: 20px;
+  width: 90%;
+  height: 15vh;
+}
+.leftShow div {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: 100%;
+  height: 4vh;
+  padding-top: 5px;
+  padding-left: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.leftShow div img {
+  background-color: #B2B5B3;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+/*Right Main Section*/
+.right {
+  width: 80%;
+}
+
+/*Top Bar*/
+.arrows {
+  width: 30px;
+  height: 30px;
+}
+
+.search {
+  border-radius: 40px;
+  background-color: #6A706C;
+  width: 25vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 75%;
+}
+.search img {
+  width: 20px;
+  height: 20px;
+}
+
+.rightSection img {
+  width: 30px;
+  height: 30px;
+}
+.rightSection .profile {
+  background-color: #6A706C;
+  border-radius: 40px;
+}
+.rightSection .profile img {
+  border-radius: 50%;
+}
+
+/*Promo Show*/
+.mainPromo {
+  background-image: url(./Images/peaky.jpeg);
+  background-size: cover;
+  width: 95%;
+  height: 30vh;
+  border-radius: 40px;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Mukta", sans-serif;
+}
+.mainPromo .text {
+  font-size: 200%;
+  background-image: url(./Images/rustic.jpeg);
+  background-size: cover;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mainPromo .buttons {
+  width: 30px;
+  height: 30px;
+}
+.mainPromo .buttons h5 {
+  background-color: #E50815;
+  border-radius: 15px;
+  text-align: center;
+  margin: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 75%;
+  box-shadow: #aa0611 0 0 10px;
+}
+
+.sections {
+  font-size: 125%;
+  margin-left: 2%;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+/*Shows, Row 1*/
+.row1Show {
+  background-size: cover;
+  border-radius: 20px;
+  width: 23%;
+  height: 18vh;
+}
+.row1Show .row1Text {
+  background-color: black;
+  background: linear-gradient(transparent 0%, black 40%, black 100%);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.row1Show .smaller {
+  font-size: 50%;
+  opacity: 75%;
+}
+.row1Show .smaller h3 {
+  margin-right: 3%;
+}
+
+.row2Show {
+  background-size: cover;
+  border-radius: 20px;
+  width: 23%;
+  height: 10vh;
+}
+.row2Show .bar {
+  height: 2px;
+  width: 90%;
+  background-color: #FFFFFF;
+}
+.row2Show .bar .barProgress {
+  height: 2px;
+  background-color: #E50815;
+}
+.row2Show .bar #fourth {
+  width: 25%;
+}
+.row2Show .bar #half {
+  width: 65%;
+}
+.row2Show .bar #ten {
+  width: 10%;
+}
+.row2Show .bar #nine {
+  width: 90%;
+}
+
+/*Show BG Images & Extras*/
+#shadow {
+  background-image: url(./Images/shadow.png);
+}
+
+#night {
+  background-image: url(./Images/night.webp);
+}
+
+#witcher {
+  background-image: url(./Images/witcher.jpeg);
+}
+
+#brooklyn {
+  background-image: url(./Images/brooklyn.webp);
+}
+
+#ready {
+  background-image: url(./Images/ready.png);
+}
+
+#money {
+  background-image: url(./Images/money.png);
+}
+
+#ash {
+  background-image: url(./Images/ash.jpeg);
+}
+
+#red {
+  background-image: url(./Images/red.jpg);
+}
+
+#extraction {
+  background-image: url(./Images/extraction.avif);
+}
+
+#adam {
+  background-image: url(./Images/adam.jpeg);
+}
+
+#guard {
+  background-image: url(./Images/guard.jpeg);
+}
+
+#play {
+  background-color: #E50815;
+  border-radius: 50%;
+  border: 3px solid #E50815;
+}/*# sourceMappingURL=style.css.map */
