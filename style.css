@@ -207,7 +207,7 @@ body {
   background-size: cover;
   border-radius: 20px;
   width: 23%;
-  height: 10vh;
+  height: 13vh;
 }
 .row2Show .bar {
   height: 2px;
@@ -229,6 +229,20 @@ body {
 }
 .row2Show .bar #nine {
   width: 90%;
+}
+.row2Show img {
+  width: 40px;
+  height: 40px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50%;
+  padding: 10px;
+  align-self: center;
+  justify-self: center;
+}
+.row2Show .row2Text {
+  margin-left: 10px;
+  margin-top: 2vh;
 }
 
 /*Show BG Images & Extras*/

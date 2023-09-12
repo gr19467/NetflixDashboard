@@ -271,7 +271,7 @@ body{
         border-radius: $lessRound;
 
         width: 23%;
-        height: 10vh;
+        height: 13vh;
 
         .bar{
             height: 2px;
@@ -298,6 +298,20 @@ body{
             #nine{
                 width: 90%;
             }
+        }
+
+        img{
+            @include size(40px, 40px);
+            backdrop-filter: $blurry;
+            border-radius: $circle;
+            padding: 10px;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .row2Text{
+            margin-left: 10px;
+            margin-top: 2vh;
         }
     }
 

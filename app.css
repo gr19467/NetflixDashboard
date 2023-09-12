@@ -550,6 +550,10 @@ video {
   align-content: center;
 }
 
+.content-end{
+  align-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
