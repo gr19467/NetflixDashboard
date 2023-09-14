@@ -176,8 +176,19 @@ body {
   height: 30vh;
   border-radius: 40px;
 }
+.mainPromo .mainItems {
+  padding-left: 3vw;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.mainPromo h3 {
+  opacity: 75%;
+  font-size: 75%;
+  padding-bottom: 1vw;
+}
 .mainPromo .text {
-  font-size: 200%;
+  font-size: 350%;
+  line-height: 90%;
   background-image: url(./Images/rustic.jpeg);
   background-size: cover;
   -webkit-background-clip: text;
@@ -185,20 +196,22 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .mainPromo .buttons {
-  width: 30px;
-  height: 30px;
+  width: 60%;
 }
 .mainPromo .buttons h5 {
   background-color: #E50815;
   border-radius: 15px;
   text-align: center;
-  margin: auto;
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 75%;
   box-shadow: #aa0611 0 0 10px;
+}
+.mainPromo .buttons img {
+  width: 30px;
+  height: 30px;
 }
 
 .sections {

@@ -219,8 +219,20 @@ body{
 
         border-radius: $round;
 
+        .mainItems{
+            padding-left: 3vw;
+            width: fit-content;
+        }
+
+        h3{
+            opacity: 75%;
+            font-size: 75%;
+            padding-bottom: 1vw;
+        }
+
         .text{
-            font-size: 200%;
+            font-size: 350%;
+            line-height: 90%;
 
             background-image: url(./Images/rustic.jpeg);
             background-size: cover;
@@ -230,12 +242,13 @@ body{
         }
 
         .buttons{
+            width: 60%;
+
             h5{
                 background-color: $red;
                 border-radius: 15px;
                 
                 text-align: center;
-                margin: auto;
 
                 padding-right: 30px;
                 padding-left: 30px;
@@ -247,7 +260,9 @@ body{
                 box-shadow: #aa0611 0 0 10px;
             }
 
-            @include size(30px, 30px);
+            img{
+               @include size(30px, 30px); 
+            }
         }
     
     }
