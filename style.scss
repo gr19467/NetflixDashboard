@@ -25,6 +25,10 @@ $circle: 50%;
     height: $height;
 }
 
+.font{
+    font-family: 'Libre Baskerville', serif;
+}
+
 body{
     background-image: url(./Images/waterfall.jpg);
     background-size: cover;
@@ -139,6 +143,12 @@ body{
     width: 80%;
 }
 
+    .leftSection{
+        width: 35vw;
+        padding-top: $basicPadding;
+        padding-bottom: $basicPadding;
+    }
+
     /*Top Bar*/
     .arrows{
         @include size(30px, 30px);
@@ -164,8 +174,13 @@ body{
     }
 
     .rightSection{
-        img{
-            @include size(30px,30px);
+        width: 15vw;
+
+        #bell{
+            border-radius: $circle;
+            background-color: $backgroundGray;
+            padding: 5px;
+            @include size(40px,40px);
         }
 
         .profile{
@@ -173,8 +188,23 @@ body{
 
             border-radius: $round;
 
+            width: 10vw;
+            height: fit-content;
+
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            h3{font-size: 75%;}
+
+            h4{font-size: 50%;}
+        
             img{
                 border-radius: $circle;
+                border: 1px solid $red;
+
+                @include size(30px,30px);
             }
         }
     }
@@ -188,9 +218,6 @@ body{
         height: 30vh;
 
         border-radius: $round;
-
-        font-family: 'Libre Baskerville', serif;
-        font-family: 'Mukta', sans-serif;
 
         .text{
             font-size: 200%;

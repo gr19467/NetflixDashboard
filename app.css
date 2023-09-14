@@ -598,3 +598,7 @@ video {
 .w-full{
   width: 100%;
 }
+
+.opacity-50{
+  opacity: 50%;
+}
